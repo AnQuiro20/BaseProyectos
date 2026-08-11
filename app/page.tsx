@@ -1,4 +1,5 @@
 import Image from "next/image";
+import UserList from "./components/user-list";
 
 export default function Home() {
   return (
@@ -33,6 +34,10 @@ export default function Home() {
             </a>{" "}
             center.
           </p>
+        </div>
+
+        <div className="w-full flex-1 flex items-start justify-center">
+          <UserList />
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
